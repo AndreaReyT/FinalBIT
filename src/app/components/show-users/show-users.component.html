@@ -1,0 +1,29 @@
+<div class="container">
+
+    <h1>Lista de Usuarios</h1>
+
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Apellido</th>
+                <th>Correo Electrónico</th>
+                <th>Edad</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor= "let user of allUser">
+                <td>{{ user.firstName }}</td>
+                <td>{{ user.lastName }}</td>
+                <td>{{ user.email }}</td>
+                <td>{{ user.age }}</td>
+                <td> <a routerLink="/editUser/{{ user._id }}" class="btn btn-success">Editar</a> </td>
+                <td> <a routerLink="/deleteUser/{{ user._id }}" class="btn btn-danger">Eliminar</a> </td>
+            </tr>        
+        </tbody>
+
+    </table>
+
+</div>

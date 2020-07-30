@@ -1,0 +1,21 @@
+.footer-page{
+    background-color: #343a3f;
+    color: white;
+    align-items: center;
+    height: 60px;
+}
+
+.IconosRedes{
+    text-align: center;
+}
+
+.ajusteicono{
+    display: inline-flex;
+    margin: 50px 35px;
+}
+
+.textFooter{
+    font-size: 15px;
+    text-align: center;
+    color: white;
+}
